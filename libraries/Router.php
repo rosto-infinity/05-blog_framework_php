@@ -99,7 +99,7 @@ class Router
     }
 
     /**
-     * Instancie un contrôleur et appelle une méthode
+     * -Instancie un contrôleur et appelle une méthode
      * 
      * @param array $action [ControllerClass, 'methodName']
      * @return mixed
