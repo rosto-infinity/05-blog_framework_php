@@ -24,7 +24,7 @@ class Router
     protected $routes = [];
 
     /**
-     * Enregistre une route GET
+     * -Enregistre une route GET
      * 
      * @param string $uri Chemin de la route (ex: '/articles')
      * @param array $action Tableau [Controller::class, 'methodName']
