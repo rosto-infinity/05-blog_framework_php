@@ -67,7 +67,7 @@ class Router
     }
 
     /**
-     * Traite la requête entrante et appelle le contrôleur approprié
+     * -Traite la requête entrante et appelle le contrôleur approprié
      * 
      * @return mixed Réponse du contrôleur
      */
