@@ -46,7 +46,7 @@ class Router
     }
 
     /**
-     * Ajoute une route à la collection
+     * -Ajoute une route à la collection
      * 
      * @param string $method Méthode HTTP (GET/POST/etc.)
      * @param string $uri Chemin URI
