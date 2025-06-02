@@ -19,7 +19,7 @@ $router->post('/comment/save', [Comment::class, 'save']);
 // -Suppression d'un commentaire
 $router->get('/comment/delete', [Comment::class, 'delete']);
 
-// Authentification
+// -Authentification
 $router->get('/login', [User::class, 'login']);
 $router->post('/login', [User::class, 'login']);
 $router->get('/logout', [User::class, 'logout']);
