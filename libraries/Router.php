@@ -142,7 +142,7 @@ class Router
     }
 
     /**
-     * Envoie une réponse 404
+     * -Envoie une réponse 404
      */
     protected function sendNotFoundResponse()
     {
