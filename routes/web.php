@@ -16,7 +16,7 @@ $router->get('/article', [Article::class, 'show']);
 // -Ajout d'un commentaire
 $router->post('/comment/save', [Comment::class, 'save']);
 
-// Suppression d'un commentaire
+// -Suppression d'un commentaire
 $router->get('/comment/delete', [Comment::class, 'delete']);
 
 // Authentification
