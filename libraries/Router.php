@@ -54,7 +54,7 @@ class Router
      */
     protected function addRoute($method, $uri, $action)
     {
-        // Validation basique de l'action
+        // -Validation basique de l'action
         if (!is_array($action) || count($action) !== 2) {
             throw new \InvalidArgumentException("L'action doit être un tableau [Controller, method]");
         }
