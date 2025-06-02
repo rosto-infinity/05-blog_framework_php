@@ -12,7 +12,7 @@ class Article extends Controller
     {
         $modelArticle = new \Libraries\Models\Article();
         $currentPage = isset($_GET['page']) ? (int)$_GET['page'] : 1;
-        $itemsPerPage = 6;
+        $itemsPerPage = 8;
 
         $articlesByPaginator = $modelArticle->findByPaginator($currentPage, $itemsPerPage);
         $totalItems = $modelArticle->countArticles();
