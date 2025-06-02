@@ -24,7 +24,7 @@ $router->get('/login', [User::class, 'login']);
 $router->post('/login', [User::class, 'login']);
 $router->get('/logout', [User::class, 'logout']);
 
-// Inscription
+// -Inscription
 $router->get('/register', [User::class, 'register']);
 $router->post('/register', [User::class, 'register']);
 
