@@ -13,7 +13,7 @@ namespace Libraries;
 class Router
 {
     /**
-     * -Tableau contenant toutes les routes enregistrées
+     * --Tableau contenant toutes les routes enregistrées
      * @var array
      * Format :
      * [
