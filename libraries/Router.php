@@ -86,7 +86,7 @@ class Router
     }
 
     /**
-     * Vérifie si une route correspond à la requête
+     * -Vérifie si une route correspond à la requête
      * 
      * @param array $route Route à vérifier
      * @param string $method Méthode HTTP
