@@ -1,7 +1,6 @@
 <?php
 
 namespace Libraries;
-
 use PDO;
 use PDOException;
 
@@ -18,6 +17,27 @@ class Database
     ];
 
     /**
+     * Charge les variables d'environnement depuis .env si disponible
+     */
+    private static function loadEnv(): void
+    {
+        $envPath = dirname(__DIR__) . '/.env';
+        if (file_exists($envPath)) {
+            $lines = file($envPath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+            foreach ($lines as $line) {
+                if (strpos(trim($line), '#') === 0) continue;
+                if (!str_contains($line, '=')) continue;
+                [$name, $value] = explode('=', $line, 2);
+                $name = trim($name);
+                $value = trim($value);
+                if (!array_key_exists($name, $_ENV)) {
+                    $_ENV[$name] = $value;
+                }
+            }
+        }
+    }
+
+    /**
      * Retourne la connexion PDO (singleton)
      *
      * @return PDO
@@ -25,6 +45,7 @@ class Database
     public static function getPdo(): PDO
     {
         if (self::$pdo === null) {
+            self::loadEnv();
             try {
                 self::$pdo = new PDO(
                     sprintf(
@@ -55,7 +76,17 @@ class Database
      */
     private static function getConfigValue(string $key)
     {
-        return defined($key) ? constant($key) : self::DEFAULT_CONFIG[$key];
+        // Mappe les clés internes vers les clés du .env
+        $envMap = [
+            'DB_SERVERNAME' => 'DB_HOST',
+            'DB_USERNAME'   => 'DB_USER',
+            'DB_PASSWORD'   => 'DB_PASS',
+            'DB_DATABASE'   => 'DB_NAME'
+        ];
+        if (isset($envMap[$key]) && isset($_ENV[$envMap[$key]])) {
+            return $_ENV[$envMap[$key]];
+        }
+        return self::DEFAULT_CONFIG[$key];
     }
 
     /**

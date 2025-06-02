@@ -1,0 +1,8 @@
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([a-zA-Z0-9_-]+)\.php$ $1.php [L]
+
+# Optionnel : Forcer l'accès uniquement aux fichiers .php existants
+<FilesMatch "\.php$">
+    Require all granted
+</FilesMatch>

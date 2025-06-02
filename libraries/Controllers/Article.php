@@ -1,7 +1,6 @@
 <?php
 
 namespace Libraries\Controllers;
-
 use Libraries\Utils;
 use JasonGrimes\Paginator;
 
