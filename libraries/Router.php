@@ -121,7 +121,7 @@ class Router
     }
 
     /**
-     * Normalise une URI (supprime les slashs finaux)
+     * -Normalise une URI (supprime les slashs finaux)
      * 
      * @param string $uri
      * @return string
