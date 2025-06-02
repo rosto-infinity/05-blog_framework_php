@@ -10,7 +10,7 @@ $router = new Router();
 // -Page d'accueil
 $router->get('/', [Article::class, 'index']);
 
-// Affichage d'un article
+// -Affichage d'un article
 $router->get('/article', [Article::class, 'show']);
 
 // Ajout d'un commentaire
