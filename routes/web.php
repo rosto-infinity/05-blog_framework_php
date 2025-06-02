@@ -7,7 +7,7 @@ use Libraries\Controllers\User;
 
 $router = new Router();
 
-// Page d'accueil
+// -Page d'accueil
 $router->get('/', [Article::class, 'index']);
 
 // Affichage d'un article
