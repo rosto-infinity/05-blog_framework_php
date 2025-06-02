@@ -35,7 +35,7 @@ class Router
     }
 
     /**
-     * Enregistre une route POST
+     * -Enregistre une route POST
      * 
      * @param string $uri Chemin de la route
      * @param array $action Tableau [Controller::class, 'methodName']
