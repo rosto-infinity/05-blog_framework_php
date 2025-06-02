@@ -13,7 +13,7 @@ $router->get('/', [Article::class, 'index']);
 // -Affichage d'un article
 $router->get('/article', [Article::class, 'show']);
 
-// Ajout d'un commentaire
+// -Ajout d'un commentaire
 $router->post('/comment/save', [Comment::class, 'save']);
 
 // Suppression d'un commentaire
