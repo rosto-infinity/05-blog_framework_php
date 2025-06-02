@@ -50,7 +50,7 @@ class Router
      * 
      * @param string $method Méthode HTTP (GET/POST/etc.)
      * @param string $uri Chemin URI
-     * @param array $action Callable sous forme [Controller, method]
+     * @param array $action -Callable sous forme [Controller, method]
      */
     protected function addRoute($method, $uri, $action)
     {
