@@ -7,13 +7,13 @@ namespace Libraries;
  * 
  * Responsable de :
  * - Stocker les routes définies
- * - Rediriger les requêtes entrantes vers les bons contrôleurs
+ * - -Rediriger les requêtes entrantes vers les bons contrôleurs
  * - Gérer les erreurs 404
  */
 class Router
 {
     /**
-     * Tableau contenant toutes les routes enregistrées
+     * -Tableau contenant toutes les routes enregistrées
      * @var array
      * Format :
      * [
