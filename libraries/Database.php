@@ -69,7 +69,7 @@ class Database
     }
 
     /**
-     * Récupère une valeur de configuration avec fallback
+     * -Récupère une valeur de configuration avec fallback
      * 
      * @param string $key
      * @return mixed
