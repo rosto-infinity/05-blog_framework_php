@@ -17,7 +17,7 @@ class Database
     ];
 
     /**
-     * Charge les variables d'environnement depuis .env si disponible
+     * -Charge les variables d'environnement depuis .env si disponible
      */
     private static function loadEnv(): void
     {
