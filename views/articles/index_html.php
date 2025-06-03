@@ -1,6 +1,6 @@
 <section class="main2">
   <header class="section-header2">
-    <h1 class="section-title2">Liste des articles</h1>
+    <h1 class="section-title">Liste des articles</h1>
     <hr class="section-divider2">
   </header>
 
