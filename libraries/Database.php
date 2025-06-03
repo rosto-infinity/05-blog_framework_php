@@ -90,7 +90,7 @@ class Database
     }
 
     /**
-     * Récupère l'ID utilisateur d'un commentaire
+     * -Récupère l'ID utilisateur d'un commentaire
      *
      * @param int $comment_id
      * @return int|null
