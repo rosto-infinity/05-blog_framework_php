@@ -8,7 +8,7 @@ class Database
 {
     private static ?PDO $pdo = null;
 
-    // Valeurs par défaut encapsulées dans la classe
+    // -Valeurs par défaut encapsulées dans la classe
     private const DEFAULT_CONFIG = [
         'DB_SERVERNAME' => '127.0.0.1',
         'DB_USERNAME'   => 'valet',
