@@ -166,7 +166,7 @@ class Article extends Controller
         $success = "";
 
         if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
-            $this->redirect('index.php');
+            $this->redirect('/');
         }
 
         if (isset($_POST['add-article'])) {
