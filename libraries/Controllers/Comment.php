@@ -39,7 +39,7 @@ class Comment extends Controller
             die('ID de commentaire invalide.');
         }
 
-        // Vérifier si le commentaire appartient à l'utilisateur connecté
+        // -Vérifier si le commentaire appartient à l'utilisateur connecté
         $commentAuthorId = $modelComment->getCommentAuthorId($comment_id);
 
         if ($user_id === $commentAuthorId) {
