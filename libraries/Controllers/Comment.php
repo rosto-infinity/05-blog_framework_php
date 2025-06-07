@@ -19,7 +19,7 @@ class Comment extends Controller
 
             $modelComment->insert($content, $article_id, $user_auth);
 
-            // Rediriger vers la page de l'article après l'ajout du commentaire
+            // -Rediriger vers la page de l'article après l'ajout du commentaire
             $this->redirect("article.php?id=" . $article_id);
         }
     }
